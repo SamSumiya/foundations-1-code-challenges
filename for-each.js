@@ -7,8 +7,12 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    return [];
-}
+    let newArr = []; 
+    arr.forEach((a) => {
+        newArr.push(a.name)
+    })
+    return newArr;
+ }
 
 /*
 Output:
@@ -17,7 +21,12 @@ Output:
 */
 
 export function makeReversedArrayOfTypes(arr) {
-    return [];
+    let newArr = []; 
+
+    for (let i = arr.length - 1; i >=0; i--) {
+        newArr.push(arr[i].type)
+    }
+    return newArr
 }
 
 /*
@@ -32,6 +41,13 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    return [];
-}
-
+    const newArr = []; 
+ 
+    arr.forEach(item => {
+        const obj = {};
+         obj.nombre = item.name
+         obj.tipo = item.type
+         newArr.push(obj)
+    })
+    return newArr
+ } 
