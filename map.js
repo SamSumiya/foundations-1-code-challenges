@@ -103,5 +103,14 @@ Output:
 */
 
 export function makeArrayOfArraysOfArrays(arr) {
-    return [];
+    const newArr = arr.map(item => {
+        const innerArr = []
+        const nameArr = []
+        const typeArr = []
+        nameArr.push('name', item.name)
+        typeArr.push('type', item.type)
+        innerArr.push(nameArr, typeArr)
+        return innerArr
+    })
+return newArr
 }
