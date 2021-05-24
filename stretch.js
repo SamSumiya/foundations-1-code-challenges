@@ -48,11 +48,13 @@ Output:
     cheese: 4
 }
 */
-
 export function organizePricesByKey(arr) {
-    return {};
+    const obj = {}; 
+    arr.forEach(item => {
+        obj[item.id] = item.price
+    })
+    return obj
 }
-
 /*
 Output: 
 {
@@ -90,9 +92,13 @@ Output:
 */
 
 export function makeAHashMap(arr) {
-    return {};
-}
+    const hash = {}; 
+    arr.forEach(item => {
+        hash[item.id] = item
+    })
 
+    return hash
+}
 
 /*
 Output: 
@@ -104,5 +110,19 @@ Output:
 */
 
 export function countByCategory(arr) {
-    return {};
+    const obj = {}; 
+    // let i = 0; 
+    arr.forEach(item => {
+        // console.log(item)
+        console.log(obj[item.category])
+        if (obj[item.category] === undefined) {
+            
+            obj[item.category] = 1; 
+        } else if (obj[item.category] >=1 ) {
+            obj[item.category]++;
+
+        }
+    }) 
+    console.log(obj)
+    return obj
 }
