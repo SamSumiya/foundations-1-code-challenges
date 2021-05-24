@@ -41,7 +41,7 @@ const groceries = [
     },
 ];
 
-skip('should return all dairy', (expect) => {
+test('should return all dairy', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = [{ 
