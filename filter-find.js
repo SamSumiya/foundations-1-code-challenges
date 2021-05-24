@@ -52,8 +52,12 @@ Output:
 ]
 */
 
+
 export function getAllDairy(arr) {
-    return [];
+    const newArr = arr.filter((item) => {
+        return item.category === 'dairy'
+    })
+    return newArr; 
 }
 
 /*
