@@ -32,7 +32,7 @@ test('should make an array of names', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should make a reverse array of type', (expect) => {
+test('should make a reverse array of type', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = ['frog', 'cat'];
@@ -46,7 +46,7 @@ skip('should make a reverse array of type', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should make a spanish array of pet objects', (expect) => {
+test('should make a spanish array of pet objects', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = [
