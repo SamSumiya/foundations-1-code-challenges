@@ -22,9 +22,10 @@ Output:
 export function makeMoreScreamingKeys(someObject) {
     const obj = {}
     const keys = Object.keys(someObject)
+    // [key1] obj.key = value 
     keys.forEach(key => {
         const newKey = key.toUpperCase()
-        obj[newKey] = someObject[key]
+        obj[newKey] = someObject[key] // value 
     })
     return obj
 }
